@@ -1,10 +1,11 @@
 ---
 layout: page
-title: project 2
-description: a project with a background image
-img: assets/img/3.jpg
+title: RELEVIUM
+description: Improving the quality of life of advanced pancreatic cancer patients
+img: assets/img/relevium_logo.png
+redirect: https://www.releviumproject.eu/
 importance: 2
-category: work
+category: EU-funded
 ---
 
 Every project has a beautiful feature showcase page.

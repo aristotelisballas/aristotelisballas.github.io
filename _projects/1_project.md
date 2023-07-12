@@ -1,10 +1,11 @@
 ---
 layout: page
-title: project 1
-description: a project with a background image
-img: assets/img/12.jpg
+title: REBECCA
+description: REsearch on BrEast Cancer induced chronic conditions supported by Causal Analysis of multi-source data
+img: assets/img/rebecca_logo.jpg
+redirect: https://rebeccaproject.eu/
 importance: 1
-category: work
+category: EU-funded
 ---
 
 Every project has a beautiful feature showcase page.

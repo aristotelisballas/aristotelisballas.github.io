@@ -14,16 +14,14 @@ profile:
     <p>Athens, Greece</p>
 
 news: true  # includes a list of news items
-latest_posts: true  # includes a list of the newest posts
-selected_papers: true # includes a list of papers marked as "selected={true}"
+latest_posts: false  # includes a list of the newest posts
+selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-Welcome to my personal wannabe website. I am Aristotelis, an aspiring PhD student researching Algorithms for Robust Representation Learning at
-[HUA](https://www.dit.hua.gr/index.php/en/), under the supervision 
-of Prof. [Christos Diou](https://diou.github.io). Just so you who you should either blaim or praise. 
+Welcome to my personal wannabe website. I am Aristotelis, an aspiring PhD student researching Algorithms for Robust Representation Learning at the
+[Harokopio University of Athens](https://www.dit.hua.gr/index.php/en/), under the supervision 
+of Prof. [Christos Diou](https://diou.github.io) (just so you know who you should either blame or praise). I also hold a diploma in Electrical and Computer Engineering from the National Tecnical University of Athens. 
 
-Currently, I'm really interested in [Domain Generalization](https://hua-aiml.github.io/dgtutorial/) and AI in healthcare. I'm also
-involved with some other things, which hopefully you can find 
-throughout the website.
+Currently, I'm really interested in [Domain Generalization](https://hua-aiml.github.io/dgtutorial/) and AI in healthcare. Besides working towards my [PhD](publications), I'm also involved with some other [things](/projects), which you can hopefully find throughout the website.
 
