@@ -7,7 +7,15 @@ nav: true
 nav_order: 4
 ---
 
-For now, this page is assumed to be a static description of your courses. You can convert it to a collection similar to `_projects/` so that you can have a dedicated page for each course.
+Below you may find a list of all the teaching activities I have been involved with.
 
 ### Data Management II
-> Along with C.Diou, we introduced students to the world of Machine Learning as a part of this postgraduate course. The course is included in the HUA [Applied Informatics](https://applied.dit.hua.gr/en/home/) Postgraduate program. 
+> Along with C.Diou, we introduced students to the world of Machine 
+Learning as a part of this course. Specifically, this course 
+provides an introduction to basic concepts and definitions related 
+to ML, such as data preparation Ordinary and Multiple Linear 
+Regression, Logistic Regression, Decision Trees and Ensemble
+methods, Fully Connected Neural Networks and CNNs. In addition,
+students are introduced to well-known ML libraries, e.g.
+Scikit-Learn, Keras and Tensorflow.
+The course is included in the HUA [Applied Informatics](https://applied.dit.hua.gr/en/home/) Postgraduate program. 
