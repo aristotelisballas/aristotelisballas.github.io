@@ -21,7 +21,7 @@ social: true  # includes social icons at the bottom of the page
 
 Welcome to my personal wannabe website. I am Aristotelis, an aspiring PhD student researching Algorithms for Robust Representation Learning at the
 [Harokopio University of Athens](https://www.dit.hua.gr/index.php/en/), under the supervision 
-of Prof. [Christos Diou](https://diou.github.io) (just so you know who you should either blame or praise). I also hold a diploma in Electrical and Computer Engineering from the National Tecnical University of Athens. 
+of Prof. [Christos Diou](https://diou.github.io). I also hold a diploma in Electrical and Computer Engineering from the National Tecnical University of Athens. 
 
 Currently, I'm really interested in [Domain Generalization](https://hua-aiml.github.io/dgtutorial/) and AI in healthcare. Besides working towards my [PhD](publications), I'm also involved with some other [things](/projects), which you can hopefully find throughout the website.
 
