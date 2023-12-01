@@ -1,6 +1,6 @@
 ---
-layout: cv
-permalink: /cv/
+layout:
+permalink: /assets/pdf/cv_arstotelis_ballas.pdf
 title: cv
 nav: true
 nav_order: 5
