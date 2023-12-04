@@ -8,4 +8,4 @@ related_posts: false
 
 Check out our latest work named "Multi-Scale and Multi-Layer Contrastive Learning for Domain Generalization", which 
 is currently under review at the [IEEE Transactions on Artificial Intelligence](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=9078688)
-journal. You can find the ArXiv preprint [here]().
+journal. You can find the ArXiv preprint [here](https://arxiv.org/abs/2308.14418).
