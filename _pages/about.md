@@ -23,7 +23,7 @@ Welcome to my personal wannabe website. I am Aristotelis, an aspiring PhD studen
 [Harokopio University of Athens](https://www.dit.hua.gr/index.php/en/), under the supervision 
 of Prof. [Christos Diou](https://diou.github.io). I also hold a diploma in Electrical and Computer Engineering from the National Tecnical University of Athens. 
 
-Currently, I'm interested in reasearching out-of-distribution robustness, [Domain Generalization](https://bds-dgtutorial.github.io/) and AI in healthcare. 
+Currently, I'm interested in reasearching **out-of-distribution robustness**, [domain generalization](https://bds-dgtutorial.github.io/) and **AI in healthcare**. 
 In addition to working towards my [PhD](publications), I'm also involved in some other [things](/projects), which you can hopefully find throughout the 
 website.
 
