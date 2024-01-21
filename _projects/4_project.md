@@ -2,7 +2,7 @@
 layout: page
 title: MELIORA
 description: Multimodal Engagement and Sustainable Lifestyle Interventions Optimizing Breast Cancer Risk Reduction 
-img: assets/img/meliora.jpg
+img: assets/img/meliora_logo.png
 redirect: https://twitter.com/MELIORA_EU
 importance: 3
 category: EU-funded
