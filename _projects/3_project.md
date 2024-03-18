@@ -3,7 +3,7 @@ layout: page
 title: HUA High Performance GPU Cluster
 description: HUA DIT HPC Cluster
 img: assets/img/hpc_project.jpg
-importance: 3
+importance: 4
 category: HUA
 ---
 
