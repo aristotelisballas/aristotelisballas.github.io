@@ -13,7 +13,7 @@ Below you may find a list of all the teaching activities I have been involved wi
 > As a teaching assistant alongside C.Diou, I assisted in this course which is part of the 
 >[ Informatics and Telematics](https://msc.dit.hua.gr/) postgraduate program. 
 > It explores how signals and data streams produced by IoT devices can be used to develop artificial intelligence 
-> application, with a focus on training of classification and regression models.
+> applications, with a focus on training of classification and regression models.
 
 
 
