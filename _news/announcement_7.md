@@ -1,11 +1,10 @@
 ---
 layout: post
-date: 2023-12-04 10:15:00-0400
+date: 2024-03-18 10:15:00-0400
 inline: true
 related_posts: false
 ---
 
-We recently submitted our latest research paper named "On the Out-Of-Distribution Robustness of Self-Supervised Representation Learning for 
-Phonocardiogram Signals" for review. You can take a look at the [preprint manuscript](https://arxiv.org/abs/2312.00502) on ArXiv and the open-source 
-[codebase](https://github.com/aristotelisballas/listen2yourheart/) on GitHub.  
+Our paper "Multi-Scale and Multi-Layer Contrastive Learning for Domain Generalization", got accepted and is now published at the [IEEE Transactions on Artificial Intelligence](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=9078688)
+journal. Feel free to check out the [paper](https://ieeexplore.ieee.org/document/10472869) and [code](https://github.com/aristotelisballas/m2cl).
 

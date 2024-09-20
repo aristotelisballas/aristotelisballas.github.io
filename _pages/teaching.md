@@ -9,7 +9,16 @@ nav_order: 4
 
 Below you may find a list of all the teaching activities I have been involved with.
 
-### Data Management II
+### Artificial Intelligence and its Applications on the Internet of Things - M.Sc.
+> As a teaching assistant alongside C.Diou, I assisted in this course which is part of the 
+>[ Informatics and Telematics](https://msc.dit.hua.gr/) postgraduate program. 
+> It explores how signals and data streams produced by IoT devices can be used to develop artificial intelligence 
+> applications, with a focus on training of classification and regression models.
+
+
+
+
+### Data Management II - M.Sc.
 > Along with C.Diou, we introduced students to the world of Machine 
 Learning as a part of this course. Specifically, this course 
 provides an introduction to basic concepts and definitions related 
