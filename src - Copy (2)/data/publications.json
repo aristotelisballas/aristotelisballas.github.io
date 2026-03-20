@@ -1,0 +1,55 @@
+[
+    {
+        "title": "Gradient-Guided Annealing for Domain Generalization",
+        "venue": "IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)",
+        "year": "2025",
+        "link": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11093999",
+        "type": "Conference",
+        "github": "https://github.com/aristotelisballas/GGA",
+        "arxiv": "https://arxiv.org/abs/2502.20162",
+        "selected": true
+    },
+    {
+        "title": "Which Augmentation Should I Use? An Empirical Investigation of Augmentations for Self-Supervised Phonocardiogram Representation Learning",
+        "venue": "IEEE Access",
+        "year": "2024",
+        "link": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10804781",
+        "type": "Journal",
+        "github": " https://github.com/aristotelisballas/listen2yourheart",
+        "arxiv": "https://arxiv.org/abs/2312.00502",
+        "selected": true
+    },
+    {
+        "title": "CycleMix: Mixing Source Domains for Domain Generalization in Style-Dependent Data",
+        "venue": "SETN",
+        "year": "2024",
+        "link": "#",
+        "type": "Conference",
+        "selected": false
+    },
+    {
+        "title": "Multi-Scale and Multi-Layer Contrastive Learning for Domain Generalization",
+        "venue": "IEEE Transactions on Artificial Intelligence",
+        "year": "2024",
+        "link": "#",
+        "type": "Journal",
+        "selected": false
+    },
+    {
+        "title": "Towards Domain Generalization for ECG and EEG Classification: Algorithms and Benchmarks",
+        "venue": "IEEE Transactions on Emerging Topics in Computational Intelligence",
+        "year": "2023",
+        "link": "#",
+        "type": "Journal",
+        "selected": false
+    },
+    {
+        "title": "Adversarial Robustness in Clinical AI Systems",
+        "venue": "ICCV Workshop",
+        "year": "2021",
+        "link": "#",
+        "type": "Conference",
+        "arxiv": "https://arxiv.org/abs/2101.00000",
+        "selected": true
+    }
+]
