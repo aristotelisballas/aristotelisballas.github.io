@@ -261,7 +261,7 @@ const ACADEMIC_EXPERIENCE = [
   {
     role: "High School Diploma (Apolytirion)",
     org: "2nd High School of Glyka Nera",
-    grade: "Panhellenic Exams: 18.305",
+    // grade: "Panhellenic Exams: 18.305",
   }
 ];
 
@@ -279,7 +279,7 @@ const WORK_EXPERIENCE = [
     desc: "Researcher in HORIZON Europe projects (REBECCA, RELEVIUM, MELIORA), focusing on leveraging Artificial Intelligence and Real-World Data to support clinical research and behavior change."
   },
   {
-    role: "System Engineer",
+    role: "Systems Engineer",
     org: "Remote",
     period: "2017 - 2021",
     desc: "Provided remote IT consulting and support, overseeing the design, installation, configuration, and development of hardware and software infrastructure for a USA-based bank. Managed network, backup, and monitoring systems; designed and executed annual disaster recovery plans; and identified and mitigated high-risk security vulnerabilities."
@@ -824,20 +824,25 @@ const MainApp = () => {
                 Courses Taught
               </h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div className="p-6 bg-white/80 backdrop-blur-sm rounded-xl border-l-4 border-teal-500 shadow-sm border-t border-r border-b border-slate-200 h-full">
-                  <h4 className="text-xl font-semibold text-slate-800">Deep Learning for Computer Vision</h4>
-                  <p className="text-sm text-teal-600 font-medium mt-1">Graduate Level • Spring 2023, 2024</p>
+                <div className="p-6 bg-white/80 backdrop-blur-sm rounded-xl border-l-4 border-blue-500 shadow-sm border-t border-r border-b border-slate-200 h-full">
+                  <h4 className="text-xl font-semibold text-slate-800">Deep Learning</h4>
+                  <p className="text-sm text-blue-600 font-medium mt-1">Graduate Level • Teaching Assistant • Spring 2025, 2026</p>
                   <p className="text-slate-600 mt-4 leading-relaxed">
-                    A comprehensive course covering modern architecture design, from basic CNNs to state-of-the-art Vision Transformers and Generative Adversarial Networks.
-                    Includes practical labs on PyTorch and weekly project milestones.
+                    A comprehensive course covering modern architecture design, from basic Neural Networks to state-of-the-art architectures including Convolutional Neural Networks, Recurrent Neural Networks, and Transformers. Includes practical implementation using popular deep learning frameworks.
+                  </p>
+                </div>
+                <div className="p-6 bg-white/80 backdrop-blur-sm rounded-xl border-l-4 border-teal-500 shadow-sm border-t border-r border-b border-slate-200 h-full">
+                  <h4 className="text-xl font-semibold text-slate-800">Artificial Intelligence and its Applications on the Internet of Things</h4>
+                  <p className="text-sm text-teal-600 font-medium mt-1">Postgraduate Level • Teaching Assistant • Spring 2025</p>
+                  <p className="text-slate-600 mt-4 leading-relaxed">
+                    This course explores how signals and data streams produced by IoT devices can be used to develop artificial intelligence applications, with a focus on training classification and regression models in IoT environments.
                   </p>
                 </div>
                 <div className="p-6 bg-white/80 backdrop-blur-sm rounded-xl border-l-4 border-purple-500 shadow-sm border-t border-r border-b border-slate-200 h-full">
-                  <h4 className="text-xl font-semibold text-slate-800">Introduction to Machine Learning</h4>
-                  <p className="text-sm text-purple-600 font-medium mt-1">Undergraduate Level • Fall 2022</p>
+                  <h4 className="text-xl font-semibold text-slate-800">Data Management II - Intro to AI</h4>
+                  <p className="text-sm text-purple-600 font-medium mt-1">Postgraduate Level • Teaching Assistant • Spring 2023, 2024, 2025</p>
                   <p className="text-slate-600 mt-4 leading-relaxed">
-                    Designed the curriculum for fundamental ML algorithms, statistical learning theory, and ethical considerations.
-                    Emphasized mathematical foundations alongside practical Python implementation using Scikit-Learn.
+                    Provides an introduction to basic concepts and definitions related to Machine Learning. Topics include data preparation, Ordinary and Multiple Linear Regression, Logistic Regression, Decision Trees and Ensemble methods, as well as Fully Connected Neural Networks and CNNs. Students are introduced to well-known ML libraries like Scikit-Learn, Keras, and Tensorflow.
                   </p>
                 </div>
               </div>
