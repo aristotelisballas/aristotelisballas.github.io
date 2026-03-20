@@ -171,6 +171,24 @@ const NAV_LINKS = [
 const NEWS_ITEMS = [
   {
     id: 1,
+    date: "Dec 2025",
+    title: "Defense of my PhD Thesis",
+    desc: "Defense of my PhD Thesis",
+    image: "/api/placeholder/800/400",
+    content: `
+      <p class="mb-4">I am happy to announce that I succesfully defended my PhD thesis on December 17th 2025.</p>
+      <p class="mb-4">TBD</p>
+      <h3 class="text-xl font-bold text-slate-800 mt-6 mb-3">Key Contributions</h3>
+      <ul class="list-disc pl-5 space-y-2 mb-6 text-slate-600">
+        <li>TBD</li>
+        <li>TBD</li>
+        <li>TBD</li>
+      </ul>
+      <p>TBD</p>
+    `
+  },
+  {
+    id: 2,
     date: "Mar 2025",
     title: "Paper Accepted at CVPR 2025",
     desc: "Our 'Gradient-Guided Annealing for Domain Generalization' paper has been accepted in CVPR 2025!",
@@ -188,7 +206,7 @@ const NEWS_ITEMS = [
     `
   },
   {
-    id: 2,
+    id: 3,
     date: "Dec 2024",
     title: "New Paper Accepted at IEEE Access",
     desc: "Our research paper named “On the Out-Of-Distribution Robustness of Self-Supervised Representation Learning for Phonocardiogram Signals” got accepted in IEEE Access.",
@@ -199,7 +217,7 @@ const NEWS_ITEMS = [
     `
   },
   {
-    id: 3,
+    id: 4,
     date: "Sep 2024",
     title: "Paper presentation at SETN 2024",
     desc: "Recently presented our short-paper “CycleMix: Mixing Source Domains for Domain Generalization in Style-Dependent Data” in SETN 2024.",
@@ -210,7 +228,7 @@ const NEWS_ITEMS = [
     `
   },
   {
-    id: 4,
+    id: 5,
     date: "Mar 2024",
     title: "Paper Accepted at IEEE TAI",
     desc: "Our paper “Multi-Scale and Multi-Layer Contrastive Learning for Domain Generalization”, got accepted and is now published at the IEEE Transactions on Artificial Intelligence journal.",
@@ -220,7 +238,7 @@ const NEWS_ITEMS = [
     `
   },
   {
-    id: 5,
+    id: 6,
     date: "Jun 2023",
     title: "Paper Accepted at IEEE TETCI",
     desc: "Our paper, “Towards Domain Generalization for ECG and EEG Classification: Algorithms and Benchmarks”, has been accepted at IEEE Transactions on Emerging Topics in Computational Intelligence.",
@@ -240,7 +258,7 @@ const ACADEMIC_EXPERIENCE = [
     role: "Postdoc in Machine & Deep Learning",
     org: "Harokopio University of Athens",
     period: "2026 - Present",
-    desc: "Dissertation: Representation Learning Algorithms for Out-of-Distribution Generalization",
+    desc: "Title: Learning Robust Representations for OOD Generalization via Loss Landscape Analysis",
     sup: "Supervisor: Christos Diou"
   },
   {
