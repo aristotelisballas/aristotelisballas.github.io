@@ -515,7 +515,7 @@ const MainApp = () => {
       <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-200 shadow-sm">
         <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
           <div className="text-xl font-bold tracking-tighter text-teal-600 cursor-pointer" onClick={() => scrollTo('hero')}>
-            Aristotelis <span className="text-slate-800">Ballas</span>
+            Home
           </div>
 
           {/* Desktop Nav */}
