@@ -17,11 +17,11 @@
         "type": "Journal",
         "github": " https://github.com/aristotelisballas/listen2yourheart",
         "arxiv": "https://arxiv.org/abs/2312.00502",
-        "selected": false
+        "selected": true
     },
     {
         "title": "CycleMix: Mixing Source Domains for Domain Generalization in Style-Dependent Data",
-        "venue": "SETN",
+        "venue": "Proceedings of the 13th Hellenic Conference on Artificial Intelligence",
         "year": "2024",
         "link": "#",
         "type": "Conference",
@@ -31,16 +31,66 @@
         "title": "Multi-Scale and Multi-Layer Contrastive Learning for Domain Generalization",
         "venue": "IEEE Transactions on Artificial Intelligence",
         "year": "2024",
-        "link": "#",
+        "link": "https://ieeexplore.ieee.org/document/10472869/",
         "type": "Journal",
+        "arxiv": "https://arxiv.org/abs/2308.14418",
+        "github": "https://github.com/aristotelisballas/m2cl",
         "selected": true
     },
     {
         "title": "Towards Domain Generalization for ECG and EEG Classification: Algorithms and Benchmarks",
         "venue": "IEEE Transactions on Emerging Topics in Computational Intelligence",
         "year": "2023",
-        "link": "#",
+        "link": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10233054",
         "type": "Journal",
-        "selected": true
+        "selected": true,
+        "arxiv": "https://arxiv.org/abs/2303.11338",
+        "github": "https://github.com/aristotelisballas/biodg"
+    },
+    {
+        "title": "CNN Feature Map Augmentation for Single-Source Domain Generalization",
+        "venue": "2023 IEEE Ninth International Conference on Big Data Computing Service and Applications (BigDataService)",
+        "year": "2023",
+        "link": "#",
+        "type": "Conference",
+        "arxiv": "https://arxiv.org/abs/2305.16746",
+        "selected": false
+    },
+    {
+        "title": "Listen2YourHeart: A Self-Supervised Approach for Detecting Murmur in Heart-Beat Sounds",
+        "venue": "2022 Computing in Cardiology (CinC)",
+        "year": "2022",
+        "link": "https://cinc.org/archives/2022/pdf/CinC2022-298.pdf",
+        "type": "Conference",
+        "arxiv": "https://arxiv.org/abs/2208.14845",
+        "github": "https://github.com/aristotelisballas/listen2yourheart",
+        "selected": false
+    },
+    {
+        "title": "A Domain Generalization Approach for Out-Of-Distribution 12-lead ECG Classification with Convolutional Neural Networks",
+        "venue": "2022 IEEE Eighth International Conference on Big Data Computing Service and Applications (BigDataService)",
+        "year": "2022",
+        "link": "https://ieeexplore.ieee.org/document/9898255",
+        "type": "Conference",
+        "arxiv": "https://arxiv.org/pdf/2208.09656",
+        "selected": false
+    },
+    {
+        "title": "Multi-layer Representation Learning for Robust OOD Image Classification",
+        "venue": "Proceedings of the 12th Hellenic Conference on Artificial Intelligence",
+        "year": "2022",
+        "link": "https://dl.acm.org/doi/10.1145/3549737.3549780",
+        "type": "Conference",
+        "arxiv": "https://arxiv.org/abs/2207.13678",
+        "selected": false
+    },
+    {
+        "title": "CNNs with multi-level attention for domain generalization",
+        "venue": "Proceedings of the 2023 ACM International Conference on Multimedia Retrieval",
+        "year": "2023",
+        "link": "https://dl.acm.org/doi/10.1145/3591106.3592263",
+        "type": "Conference",
+        "arxiv": "https://arxiv.org/abs/2304.00502",
+        "selected": false
     }
 ]

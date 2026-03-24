@@ -148,10 +148,10 @@ const LossSurfaceBackground = () => {
   }, []);
 
   return (
-    <div className="fixed top-0 left-0 w-full h-full -z-10 bg-slate-50 overflow-hidden">
+    <div className="fixed top-0 left-0 w-full h-full -z-10 bg-[#061A2F] overflow-hidden">
       <canvas ref={canvasRef} className="absolute inset-0 w-full h-full" />
       {/* Overlay for depth fading at edges if needed */}
-      <div className="absolute inset-0 bg-gradient-to-t from-slate-50 via-transparent to-slate-50 opacity-60 pointer-events-none"></div>
+      <div className="absolute inset-0 bg-gradient-to-t from-[#061A2F] via-transparent to-[#061A2F] opacity-60 pointer-events-none"></div>
     </div>
   );
 };
@@ -174,35 +174,33 @@ const NEWS_ITEMS = [
     date: "Dec 2025",
     title: "Defense of my PhD Thesis",
     desc: "Defense of my PhD Thesis",
-    image: "/api/placeholder/800/400",
+    image: "news/phd/defense.png",
     content: `
       <p class="mb-4">I am happy to announce that I succesfully defended my PhD thesis on December 17th 2025.</p>
-      <p class="mb-4">TBD</p>
-      <h3 class="text-xl font-bold text-slate-800 mt-6 mb-3">Key Contributions</h3>
-      <ul class="list-disc pl-5 space-y-2 mb-6 text-slate-600">
-        <li>TBD</li>
-        <li>TBD</li>
-        <li>TBD</li>
-      </ul>
-      <p>TBD</p>
-    `
+        
+      <p class="mb-4"> Looking back at this journey, I feel an overwhelming sense of gratitude for everyone who helped make this possible, as I am incredibly thankful to have had such a strong support system.</p>
+    
+      <p class="mb-4">To my advisor, Christos Diou: Thank you for your guidance, patience, and for pushing me to become both a better researcher and person. Without you none of this would be possible.</p>
+      
+      <p class="mb-4">To my family and loved ones, words are not enough.</p>
+      
+      <p class="mb-1">📜 Dissertation: <a href="https://www.didaktorika.gr/eadd/handle/10442/60566" target="_blank" rel="noreferrer" class="text-teal-400 hover:underline">link</a></p>
+
+      `
   },
   {
     id: 2,
     date: "Mar 2025",
     title: "Paper Accepted at CVPR 2025",
     desc: "Our 'Gradient-Guided Annealing for Domain Generalization' paper has been accepted in CVPR 2025!",
-    image: "/api/placeholder/800/400",
+    image: "/public/news/cvpr/gga-concept.png",
     content: `
       <p class="mb-4">We are thrilled to announce that our latest work, "Gradient-Guided Annealing for Domain Generalization," has been accepted for publication at the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) 2025.</p>
-      <p class="mb-4">Domain Generalization (DG) remains a critical challenge in deploying machine learning models to the wild. In this paper, we propose a novel optimization strategy that leverages gradient guidance to simulated annealing processes, effectively navigating the loss landscape to find flatter minima that generalize better across unseen domains.</p>
-      <h3 class="text-xl font-bold text-slate-800 mt-6 mb-3">Key Contributions</h3>
-      <ul class="list-disc pl-5 space-y-2 mb-6 text-slate-600">
-        <li>A novel hybrid optimization algorithm combining SGD with simulated annealing concepts.</li>
-        <li>Theoretical analysis proving convergence bounds in non-convex landscapes.</li>
-        <li>State-of-the-art results on DomainBed, exceeding previous baselines by 2.4% on average.</li>
-      </ul>
+      <p class="mb-4">In our research, we tackle the problem of Domain Generalization (hashtag#DG) from a gradient perspective, observing that conflicting gradients in datasets with diverse samples cause models to converge to suboptimal parameter configurations. The proposed Gradient-Guided Annealing (GGA) algorithm identifies loss surface minima that exhibit improved robustness by iteratively annealing its parameters, searching for points where gradients align across domains.</p>
       <p>We look forward to presenting this work in person and discussing the future of robust AI systems.</p>
+      <p class="mb-2">If you want to learn more about our work, check out the following:</p>
+      <p class="mb-1">📜 Paper: <a href="https://arxiv.org/abs/2502.20162" target="_blank" rel="noreferrer" class="text-teal-400 hover:underline">link</a></p>
+      <p>🖥️ Code: <a href="https://github.com/aristotelisballas/GGA" target="_blank" rel="noreferrer" class="text-teal-400 hover:underline">link</a></p>
     `
   },
   {
@@ -210,10 +208,15 @@ const NEWS_ITEMS = [
     date: "Dec 2024",
     title: "New Paper Accepted at IEEE Access",
     desc: "Our research paper named “On the Out-Of-Distribution Robustness of Self-Supervised Representation Learning for Phonocardiogram Signals” got accepted in IEEE Access.",
-    image: "/api/placeholder/800/400",
+    image: "/public/news/pcg/abstract.png",
     content: `
-      <p class="mb-4">Our latest research on biosignals has been accepted in IEEE Access. The paper, titled “On the Out-Of-Distribution Robustness of Self-Supervised Representation Learning for Phonocardiogram Signals”, explores how self-supervised learning can improve the reliability of heart sound classification models.</p>
-      <p>Phonocardiograms (PCGs) are often collected in noisy environments with varying recording devices. We demonstrate that standard supervised models fail to generalize to new hospitals or devices, whereas SSL pre-training provides robust feature representations that maintain performance even under significant distribution shifts.</p>
+      <p class=”mb-4”>🔊 Announcing our paper published in <strong>#IEEEAccess</strong>: “Which Augmentation Should I Use? An Empirical Investigation of Augmentations for Self-Supervised Phonocardiogram Representation Learning”.</p>
+      <p class=”mb-4”>w/ Vasileios Papapanagiotou and Christos Diou</p>
+      <p class=”mb-4”>In this work, we perform an in-depth comparative analysis across multiple Phonocardiogram datasets and downstream tasks, examining the influence of different augmentation strategies on model performance, robustness, and generalization. Our results demonstrate that the choice of augmentation policy in contrastive self-supervised learning (SSL) plays a crucial role in producing robust models, which maintain strong performance even when tested on previously unseen or out-of-distribution (OOD) data.</p>
+      <p class=”mb-2”>If you want to learn more about our study check out our paper and code:</p>
+      <p class=”mb-1”>💻 Code: <a href=”https://github.com/aristotelisballas/listen2yourheart” target=”_blank” rel=”noreferrer” class=”text-teal-400 hover:underline”>link</a></p>
+      <p class=”mb-1”>📰 Paper: <a href=”https://ieeexplore.ieee.org/document/10804781/” target=”_blank” rel=”noreferrer” class=”text-teal-400 hover:underline”>link</a></p>
+      <p>📜 ArXiv: <a href=”https://arxiv.org/abs/2312.00502” target=”_blank” rel=”noreferrer” class=”text-teal-400 hover:underline”>link</a></p>
     `
   },
   {
@@ -221,7 +224,7 @@ const NEWS_ITEMS = [
     date: "Sep 2024",
     title: "Paper presentation at SETN 2024",
     desc: "Recently presented our short-paper “CycleMix: Mixing Source Domains for Domain Generalization in Style-Dependent Data” in SETN 2024.",
-    image: "/api/placeholder/800/400",
+    image: "/public/news/cyclemix/cyclemix.png",
     content: `
       <p class="mb-4">I had the pleasure of presenting our work "CycleMix" at the 13th Hellenic Conference on Artificial Intelligence (SETN 2024). CycleMix addresses the problem of style-dependent domain shifts by mixing source domains in a cyclic consistency framework.</p>
       <p>The conference provided an excellent platform to discuss the nuances of domain adaptation vs. generalization with fellow researchers in the Greek AI community.</p>
@@ -232,9 +235,13 @@ const NEWS_ITEMS = [
     date: "Mar 2024",
     title: "Paper Accepted at IEEE TAI",
     desc: "Our paper “Multi-Scale and Multi-Layer Contrastive Learning for Domain Generalization”, got accepted and is now published at the IEEE Transactions on Artificial Intelligence journal.",
-    image: "/api/placeholder/800/400",
+    image: "/public/news/tai/res50_model.png",
     content: `
-      <p class="mb-4">We are happy to share that our work on "Multi-Scale and Multi-Layer Contrastive Learning" is now published in IEEE Transactions on Artificial Intelligence. This journal paper consolidates our research on using contrastive losses at different layers of deep networks to enforce domain invariance.</p>
+      <p class="mb-4">In our recent paper with Christos Diou (published in the IEEE Transactions on Artificial Intelligence Journal), we introduce M2CL and attempt to tackle <strong>#DG</strong> in image classification.</p>
+      <p class="mb-4">Domain Generalization is one of the most important problems in <strong>#ML</strong> today. In image classification particularly, a drawback of established CNN models is that representations extracted from deep layers of the network often contain features that can be attributed solely to the domain but are not relevant to the depicted class. In our work, we enable CNN models to learn domain invariant and disentangled representations by combining multi-layered and multi-scaled features of the network.</p>
+      <p class="mb-2">Both the paper and code are available here:</p>
+      <p class="mb-1">🔗 Paper: <a href="https://ieeexplore.ieee.org/document/10472869" target="_blank" rel="noreferrer" class="text-teal-400 hover:underline">link</a></p>
+      <p>🔗 Code: <a href="https://github.com/aristotelisballas/m2cl" target="_blank" rel="noreferrer" class="text-teal-400 hover:underline">link</a></p>
     `
   },
   {
@@ -242,7 +249,7 @@ const NEWS_ITEMS = [
     date: "Jun 2023",
     title: "Paper Accepted at IEEE TETCI",
     desc: "Our paper, “Towards Domain Generalization for ECG and EEG Classification: Algorithms and Benchmarks”, has been accepted at IEEE Transactions on Emerging Topics in Computational Intelligence.",
-    image: "/api/placeholder/800/400",
+    image: "/public/news/tetci/benchmark.png",
     content: `
       <p class="mb-4">This work establishes rigorous benchmarks for Domain Generalization in the context of 1D biosignals (ECG and EEG), a field often overlooked compared to 2D computer vision. We provide a standardized evaluation protocol and open-source datasets to facilitate future research.</p>
     `
@@ -375,25 +382,26 @@ const NewsDetailView = ({ newsItem, onBack }) => {
         >
           <ArrowLeft className="w-5 h-5 group-hover:-translate-x-1 transition-transform" /> Back to News
         </button>
-        <div className="flex items-center gap-2 text-slate-500 text-sm font-bold uppercase tracking-wider mb-3">
+        <div className="flex items-center gap-2 text-slate-400 text-sm font-bold uppercase tracking-wider mb-3">
           <Calendar className="w-4 h-4" />
           {newsItem.date}
         </div>
-        <h1 className="text-3xl md:text-5xl font-bold text-slate-900 mb-6 leading-tight">{newsItem.title}</h1>
+        <h1 className="text-3xl md:text-5xl font-bold text-white mb-6 leading-tight">{newsItem.title}</h1>
       </div>
 
       {/* Image */}
-      <div className="w-full h-64 md:h-96 bg-slate-100 rounded-xl overflow-hidden mb-8 border border-slate-200">
+      <div className="w-full flex justify-center mb-8">
         <img
           src={newsItem.image}
           alt={newsItem.title}
-          className="w-full h-full object-cover"
+          className="max-w-sm w-full h-auto rounded-xl border border-slate-700" 
+        // max-w-lg to max-w-sm, max-w-md, max-w-xl adjust for smaller or larger
         />
       </div>
 
       {/* Content */}
       <div
-        className="prose prose-lg max-w-none text-slate-600 prose-headings:text-slate-900 prose-a:text-teal-600"
+        className="prose prose-lg max-w-none text-slate-300 prose-headings:text-slate-100 prose-a:text-teal-400 prose-invert"
         dangerouslySetInnerHTML={{ __html: newsItem.content }}
       />
     </div>
@@ -416,11 +424,11 @@ const AllPublicationsView = ({ onBack }) => {
       <div className="flex items-center gap-4 mb-8">
         <button
           onClick={onBack}
-          className="p-2 rounded-full bg-white hover:bg-teal-600 hover:text-white text-slate-600 transition-colors shadow-sm border border-slate-200"
+          className="p-2 rounded-full bg-slate-800 hover:bg-teal-600 hover:text-white text-slate-300 transition-colors shadow-sm border border-slate-700"
         >
           <ArrowLeft className="w-6 h-6" />
         </button>
-        <h1 className="text-3xl md:text-4xl font-bold text-slate-900">Full Publication List</h1>
+        <h1 className="text-3xl md:text-4xl font-bold text-white">Full Publication List</h1>
       </div>
 
       <div className="space-y-12">
@@ -431,36 +439,36 @@ const AllPublicationsView = ({ onBack }) => {
             </h2>
             <div className="space-y-4">
               {pubs.map((pub, idx) => (
-                <div key={idx} className="bg-white/80 backdrop-blur-sm border border-slate-200 p-6 rounded-lg hover:border-teal-500/50 hover:shadow-md transition-all">
+                <div key={idx} className="bg-slate-800/80 backdrop-blur-sm border border-slate-700 p-6 rounded-lg hover:border-teal-500/50 hover:shadow-md transition-all">
                   <div className="flex flex-col md:flex-row gap-4 justify-between">
                     <div className="flex-1">
                       <div className="flex items-center gap-3 mb-2">
                         <span className={`px-2 py-0.5 rounded text-xs font-bold border ${pub.type === 'Journal'
-                          ? 'bg-purple-50 text-purple-600 border-purple-200'
-                          : 'bg-teal-50 text-teal-600 border-teal-200'
+                          ? 'bg-purple-900/30 text-purple-400 border-purple-800'
+                          : 'bg-teal-900/30 text-teal-400 border-teal-700'
                           }`}>
                           {pub.type}
                         </span>
                       </div>
-                      <h3 className="text-lg font-semibold text-slate-800 mb-2">
+                      <h3 className="text-lg font-semibold text-slate-200 mb-2">
                         {pub.title}
                       </h3>
-                      <p className="text-slate-500 text-sm italic">{pub.venue}</p>
+                      <p className="text-slate-400 text-sm italic">{pub.venue}</p>
                     </div>
 
                     <div className="flex flex-wrap items-start gap-3 shrink-0 mt-2 md:mt-0">
                       {pub.arxiv && (
-                        <a href={pub.arxiv} target="_blank" rel="noreferrer" className="flex items-center gap-1 text-xs font-medium text-slate-500 hover:text-red-500 bg-slate-50 border border-slate-200 px-3 py-2 rounded transition-colors">
+                        <a href={pub.arxiv} target="_blank" rel="noreferrer" className="flex items-center gap-1 text-xs font-medium text-slate-400 hover:text-red-400 bg-slate-800 border border-slate-700 px-3 py-2 rounded transition-colors">
                           <FileText className="w-3 h-3" /> ArXiv
                         </a>
                       )}
                       {pub.github && (
-                        <a href={pub.github} target="_blank" rel="noreferrer" className="flex items-center gap-1 text-xs font-medium text-slate-500 hover:text-slate-900 bg-slate-50 border border-slate-200 px-3 py-2 rounded transition-colors">
+                        <a href={pub.github} target="_blank" rel="noreferrer" className="flex items-center gap-1 text-xs font-medium text-slate-400 hover:text-slate-200 bg-slate-800 border border-slate-700 px-3 py-2 rounded transition-colors">
                           <Github className="w-3 h-3" /> Code
                         </a>
                       )}
                       {pub.link !== '#' && (
-                        <a href={pub.link} target="_blank" rel="noreferrer" className="flex items-center gap-1 text-xs font-medium text-teal-600 hover:text-teal-800 bg-teal-50 border border-teal-100 px-3 py-2 rounded transition-colors">
+                        <a href={pub.link} target="_blank" rel="noreferrer" className="flex items-center gap-1 text-xs font-medium text-teal-400 hover:text-teal-300 bg-teal-900/30 border border-teal-700 px-3 py-2 rounded transition-colors">
                           View <ExternalLink className="w-3 h-3" />
                         </a>
                       )}
@@ -526,11 +534,11 @@ const MainApp = () => {
   };
 
   return (
-    <div className="min-h-screen text-slate-700 font-sans selection:bg-teal-200 selection:text-teal-900 overflow-x-hidden">
+    <div className="min-h-screen text-slate-200 font-sans selection:bg-teal-800 selection:text-teal-100 overflow-x-hidden">
       <LossSurfaceBackground />
 
       {/* --- NAVIGATION --- */}
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-200 shadow-sm">
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-[#061A2F]/90 backdrop-blur-md border-b border-slate-700 shadow-sm">
         <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
           <div className="text-xl font-bold tracking-tighter text-teal-600 cursor-pointer" onClick={() => scrollTo('hero')}>
             Home
@@ -543,8 +551,8 @@ const MainApp = () => {
                 key={link.name}
                 onClick={() => handleNavClick(link)}
                 className={`text-sm font-medium transition-colors uppercase tracking-widest ${link.isExternal
-                  ? 'px-4 py-2 bg-teal-50 text-teal-600 border border-teal-200 rounded hover:bg-teal-600 hover:text-white'
-                  : 'text-slate-500 hover:text-teal-600'
+                  ? 'px-4 py-2 bg-teal-900/30 text-teal-400 border border-teal-700 rounded hover:bg-teal-600 hover:text-white'
+                  : 'text-slate-400 hover:text-teal-400'
                   }`}
               >
                 {link.name}
@@ -554,7 +562,7 @@ const MainApp = () => {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden text-slate-600"
+            className="md:hidden text-slate-300"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             <div className="space-y-1.5">
@@ -567,12 +575,12 @@ const MainApp = () => {
 
         {/* Mobile Nav Overlay */}
         {isMenuOpen && (
-          <div className="md:hidden bg-white border-b border-slate-200 absolute w-full px-6 py-4 flex flex-col space-y-4 shadow-lg">
+          <div className="md:hidden bg-slate-900 border-b border-slate-700 absolute w-full px-6 py-4 flex flex-col space-y-4 shadow-lg">
             {NAV_LINKS.map((link) => (
               <button
                 key={link.name}
                 onClick={() => handleNavClick(link)}
-                className="text-left text-sm font-medium text-slate-600 hover:text-teal-600 uppercase tracking-widest"
+                className="text-left text-sm font-medium text-slate-300 hover:text-teal-400 uppercase tracking-widest"
               >
                 {link.name}
               </button>
@@ -598,14 +606,14 @@ const MainApp = () => {
                 <img
                   src="profile.jpg"
                   alt="Aristlotelis Ballas"
-                  className="relative w-40 h-40 rounded-full border-4 border-white object-cover shadow-xl"
+                  className="relative w-40 h-40 rounded-full border-4 border-slate-700 object-cover shadow-xl"
                 />
               </div>
 
-              <h1 className="text-5xl md:text-7xl font-bold text-slate-900 mb-6 leading-tight">
+              <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
                 Aristotelis Ballas <br />
               </h1>
-              <p className="text-lg md:text-xl text-slate-500 max-w-2xl mx-auto mb-10 leading-relaxed">
+              <p className="text-lg md:text-xl text-slate-400 max-w-2xl mx-auto mb-10 leading-relaxed">
                 I am a Postdoctoral Deep Learning Researcher, focusing on out-of-distribution robustness, domain generalization and AI in healthcare. <br />
               </p>
 
@@ -616,7 +624,7 @@ const MainApp = () => {
                 }} className="px-8 py-3 bg-teal-600 hover:bg-teal-700 text-white font-bold rounded-full transition-all transform hover:scale-105 shadow-lg shadow-teal-500/30">
                   Publications
                 </button>
-                <button onClick={() => scrollTo('contact')} className="px-8 py-3 border border-slate-300 hover:border-teal-600 text-slate-600 hover:text-teal-600 rounded-full transition-all bg-white/50 backdrop-blur-sm">
+                <button onClick={() => scrollTo('contact')} className="px-8 py-3 border border-slate-600 hover:border-teal-500 text-slate-300 hover:text-teal-400 rounded-full transition-all bg-slate-800/50 backdrop-blur-sm">
                   Contact Me
                 </button>
               </div>
@@ -630,8 +638,8 @@ const MainApp = () => {
           {/* --- NEWS SECTION --- */}
           <section id="news" className="py-20 px-6">
             <div className="max-w-5xl mx-auto">
-              <h3 className="text-2xl font-bold text-slate-900 mb-8 flex items-center gap-3">
-                <Bell className="w-6 h-6 text-teal-600" />
+              <h3 className="text-2xl font-bold text-white mb-8 flex items-center gap-3">
+                <Bell className="w-6 h-6 text-teal-400" />
                 Latest News
               </h3>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -639,14 +647,14 @@ const MainApp = () => {
                   <div
                     key={idx}
                     onClick={() => handleNewsClick(item)}
-                    className="group bg-white/80 backdrop-blur-sm border border-slate-200 p-6 rounded-lg hover:border-teal-500/50 hover:shadow-xl hover:-translate-y-1 transition-all cursor-pointer flex flex-col shadow-sm"
+                    className="group bg-slate-800/80 backdrop-blur-sm border border-slate-700 p-6 rounded-lg hover:border-teal-500/50 hover:shadow-xl hover:-translate-y-1 transition-all cursor-pointer flex flex-col shadow-sm"
                   >
                     <div className="flex items-center gap-2 text-teal-600 text-sm font-bold mb-3 uppercase tracking-wider">
                       <Calendar className="w-4 h-4" />
                       {item.date}
                     </div>
-                    <h4 className="text-lg font-bold text-slate-800 mb-2 group-hover:text-teal-600 transition-colors">{item.title}</h4>
-                    <p className="text-slate-500 text-sm leading-relaxed mb-4">{item.desc}</p>
+                    <h4 className="text-lg font-bold text-slate-200 mb-2 group-hover:text-teal-400 transition-colors">{item.title}</h4>
+                    <p className="text-slate-400 text-sm leading-relaxed mb-4">{item.desc}</p>
                     <div className="mt-auto flex items-center gap-2 text-sm text-teal-600 font-medium opacity-0 group-hover:opacity-100 transition-opacity -translate-x-2 group-hover:translate-x-0 transform">
                       Read More <ArrowRight className="w-4 h-4" />
                     </div>
@@ -657,26 +665,26 @@ const MainApp = () => {
           </section>
 
           {/* --- ABOUT & BIO --- */}
-          <section id="about" className="py-20 px-6 bg-slate-50/50">
+          <section id="about" className="py-20 px-6 bg-slate-900/30">
             <div className="max-w-7xl mx-auto">
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-start">
 
                 {/* Philosophy Column */}
                 <div className="h-full">
-                  <h3 className="text-2xl font-bold text-slate-900 mb-8 flex items-center gap-3">
-                    <Globe className="w-6 h-6 text-teal-600" />
+                  <h3 className="text-2xl font-bold text-white mb-8 flex items-center gap-3">
+                    <Globe className="w-6 h-6 text-teal-400" />
                     Philosophy
                   </h3>
-                  <div className="bg-white/80 backdrop-blur-sm p-8 rounded-2xl border border-slate-200 shadow-sm">
-                    <p className="text-slate-600 mb-6 leading-relaxed text-sm">
+                  <div className="bg-slate-800/80 backdrop-blur-sm p-8 rounded-2xl border border-slate-700 shadow-sm">
+                    <p className="text-slate-300 mb-6 leading-relaxed text-sm">
                       My work is driven by the conviction that Artificial Intelligence should be <strong> robust, and human-centric</strong>.
                       As a proud member of the HUA Robust AI Group, under the supervision of Prof. <a href="https://diou.github.io/" className="text-teal-600 hover:underline"> Christos Diou</a>, I am interested in developing methods that can be leveraged in critical domains like Healthcare.
                     </p>
                     <div className="space-y-4">
-                      <h4 className="text-sm font-bold text-slate-500 uppercase tracking-widest">Key Competencies</h4>
+                      <h4 className="text-sm font-bold text-slate-400 uppercase tracking-widest">Key Competencies</h4>
                       <div className="flex flex-wrap gap-2">
                         {RESEARCH_INTERESTS.map((skill) => (
-                          <span key={skill} className="px-3 py-1 bg-slate-100 text-teal-700 text-xs rounded-md border border-slate-200 font-medium">
+                          <span key={skill} className="px-3 py-1 bg-slate-800 text-teal-400 text-xs rounded-md border border-slate-700 font-medium">
                             {skill}
                           </span>
                         ))}
@@ -687,19 +695,19 @@ const MainApp = () => {
 
                 {/* Academic Timeline Column */}
                 <div className="h-full">
-                  <h3 className="text-2xl font-bold text-slate-900 mb-8 flex items-center gap-3">
-                    <GraduationCap className="w-6 h-6 text-teal-600" />
+                  <h3 className="text-2xl font-bold text-white mb-8 flex items-center gap-3">
+                    <GraduationCap className="w-6 h-6 text-teal-400" />
                     Academia
                   </h3>
-                  <div className="space-y-8 border-l border-slate-300 ml-3 pl-8 relative">
+                  <div className="space-y-8 border-l border-slate-700 ml-3 pl-8 relative">
                     {ACADEMIC_EXPERIENCE.map((exp, idx) => (
                       <div key={idx} className="relative">
-                        <span className="absolute -left-[39px] top-1 w-5 h-5 bg-white border-2 border-teal-500 rounded-full"></span>
-                        <h4 className="text-lg font-semibold text-slate-800">{exp.role}</h4>
+                        <span className="absolute -left-[39px] top-1 w-5 h-5 bg-slate-800 border-2 border-teal-500 rounded-full"></span>
+                        <h4 className="text-lg font-semibold text-slate-200">{exp.role}</h4>
                         <p className="text-teal-600 text-xs font-medium mb-1">{exp.org} | {exp.period}</p>
                         {exp.sup && <p className="text-teal-600 text-xs font-medium mb-1">{exp.sup}</p>}
                         {exp.grade && <p className="text-teal-600 text-xs font-medium mb-1">{exp.grade}</p>}
-                        <p className="text-slate-500 text-xs leading-relaxed">{exp.desc}</p>
+                        <p className="text-slate-400 text-xs leading-relaxed">{exp.desc}</p>
                       </div>
                     ))}
                   </div>
@@ -707,17 +715,17 @@ const MainApp = () => {
 
                 {/* Work Experience Column */}
                 <div className="h-full">
-                  <h3 className="text-2xl font-bold text-slate-900 mb-8 flex items-center gap-3">
-                    <Briefcase className="w-6 h-6 text-teal-600" />
+                  <h3 className="text-2xl font-bold text-white mb-8 flex items-center gap-3">
+                    <Briefcase className="w-6 h-6 text-teal-400" />
                     Work Experience
                   </h3>
-                  <div className="space-y-8 border-l border-slate-300 ml-3 pl-8 relative">
+                  <div className="space-y-8 border-l border-slate-700 ml-3 pl-8 relative">
                     {WORK_EXPERIENCE.map((exp, idx) => (
                       <div key={idx} className="relative">
-                        <span className="absolute -left-[39px] top-1 w-5 h-5 bg-white border-2 border-purple-500 rounded-full"></span>
-                        <h4 className="text-lg font-semibold text-slate-800">{exp.role}</h4>
-                        <p className="text-purple-600 text-xs font-medium mb-1">{exp.org} | {exp.period}</p>
-                        <p className="text-slate-500 text-xs leading-relaxed">{exp.desc}</p>
+                        <span className="absolute -left-[39px] top-1 w-5 h-5 bg-slate-800 border-2 border-purple-500 rounded-full"></span>
+                        <h4 className="text-lg font-semibold text-slate-200">{exp.role}</h4>
+                        <p className="text-purple-400 text-xs font-medium mb-1">{exp.org} | {exp.period}</p>
+                        <p className="text-slate-400 text-xs leading-relaxed">{exp.desc}</p>
                       </div>
                     ))}
                   </div>
@@ -731,8 +739,8 @@ const MainApp = () => {
           <section id="research" className="py-20 px-6">
             <div className="max-w-7xl mx-auto">
               <div className="flex flex-col md:flex-row justify-between items-end mb-12">
-                <h2 className="text-3xl md:text-4xl font-bold text-slate-900 flex items-center gap-3">
-                  <BookOpen className="w-8 h-8 text-teal-600" />
+                <h2 className="text-3xl md:text-4xl font-bold text-white flex items-center gap-3">
+                  <BookOpen className="w-8 h-8 text-teal-400" />
                   Selected Publications
                 </h2>
                 <button
@@ -748,31 +756,31 @@ const MainApp = () => {
 
               <div className="space-y-4">
                 {SELECTED_PUBLICATIONS.map((pub, idx) => (
-                  <div key={idx} className="group flex flex-col md:flex-row items-start md:items-center justify-between bg-white/80 backdrop-blur-sm border border-slate-200 p-6 rounded-lg hover:border-teal-500/50 hover:shadow-md transition-all">
+                  <div key={idx} className="group flex flex-col md:flex-row items-start md:items-center justify-between bg-slate-800/80 backdrop-blur-sm border border-slate-700 p-6 rounded-lg hover:border-teal-500/50 hover:shadow-md transition-all">
                     <div className="flex-1">
                       <div className="flex items-center gap-3 mb-2">
-                        <span className="px-2 py-0.5 rounded text-xs font-bold bg-teal-50 text-teal-600 border border-teal-200">
+                        <span className="px-2 py-0.5 rounded text-xs font-bold bg-teal-900/30 text-teal-400 border border-teal-700">
                           {pub.type}
                         </span>
-                        <span className="text-slate-400 text-sm">{pub.year}</span>
+                        <span className="text-slate-500 text-sm">{pub.year}</span>
                       </div>
-                      <h3 className="text-lg font-semibold text-slate-800 group-hover:text-teal-700 transition-colors">
+                      <h3 className="text-lg font-semibold text-slate-200 group-hover:text-teal-400 transition-colors">
                         {pub.title}
                       </h3>
-                      <p className="text-slate-500 text-sm">{pub.venue}</p>
+                      <p className="text-slate-400 text-sm">{pub.venue}</p>
                     </div>
                     <div className="mt-4 md:mt-0 md:ml-6 flex flex-wrap items-center gap-4">
 
                       {/* ArXiv Link */}
                       {pub.arxiv && (
-                        <a href={pub.arxiv} target="_blank" rel="noreferrer" className="flex items-center gap-2 text-sm font-medium text-slate-500 hover:text-red-500 transition-colors">
+                        <a href={pub.arxiv} target="_blank" rel="noreferrer" className="flex items-center gap-2 text-sm font-medium text-slate-400 hover:text-red-400 transition-colors">
                           <FileText className="w-4 h-4" /> ArXiv
                         </a>
                       )}
 
                       {/* GitHub Link */}
                       {pub.github && (
-                        <a href={pub.github} target="_blank" rel="noreferrer" className="flex items-center gap-2 text-sm font-medium text-slate-500 hover:text-slate-900 transition-colors">
+                        <a href={pub.github} target="_blank" rel="noreferrer" className="flex items-center gap-2 text-sm font-medium text-slate-400 hover:text-slate-200 transition-colors">
                           <Github className="w-4 h-4" /> Code
                         </a>
                       )}
@@ -787,7 +795,7 @@ const MainApp = () => {
               </div>
 
               <div className="mt-8 text-center">
-                <a href="https://scholar.google.com/citations?user=7dfMirEAAAAJ&hl=en" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 text-slate-500 hover:text-slate-900 transition-colors border-b border-transparent hover:border-teal-500 pb-1">
+                <a href="https://scholar.google.com/citations?user=7dfMirEAAAAJ&hl=en" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 text-slate-400 hover:text-slate-200 transition-colors border-b border-transparent hover:border-teal-500 pb-1">
                   View Full List on Google Scholar <ExternalLink className="w-4 h-4" />
                 </a>
               </div>
@@ -795,35 +803,35 @@ const MainApp = () => {
           </section>
 
           {/* --- PROJECTS --- */}
-          <section id="projects" className="py-20 px-6 bg-slate-50/50">
+          <section id="projects" className="py-20 px-6 bg-slate-900/30">
             <div className="max-w-7xl mx-auto">
               <div className="flex flex-col md:flex-row justify-between items-end mb-12">
                 <div>
-                  <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-2">Project Involvement</h2>
+                  <h2 className="text-3xl md:text-4xl font-bold text-white mb-2">Project Involvement</h2>
                 </div>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {PROJECTS.map((project, idx) => (
-                  <div key={idx} className="group relative bg-white/80 backdrop-blur-sm border border-slate-200 rounded-xl p-6 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                  <div key={idx} className="group relative bg-slate-800/80 backdrop-blur-sm border border-slate-700 rounded-xl p-6 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
                     <div className="flex justify-between items-start mb-4">
-                      <div className="p-2 bg-teal-50 rounded-lg">
+                      <div className="p-2 bg-teal-900/30 rounded-lg">
                         {project.title.includes("CI/CD") ? <Terminal className="w-6 h-6 text-teal-600" /> : <Briefcase className="w-6 h-6 text-teal-600" />}
                       </div>
-                      <a href={project.link} target="_blank" rel="noreferrer" className="text-slate-400 hover:text-teal-600 transition-colors">
+                      <a href={project.link} target="_blank" rel="noreferrer" className="text-slate-500 hover:text-teal-400 transition-colors">
                         <ExternalLink className="w-5 h-5" />
                       </a>
                     </div>
 
-                    <h3 className="text-xl font-bold text-slate-800 mb-1 group-hover:text-teal-600 transition-colors">{project.title}</h3>
-                    <p className="text-xs font-semibold text-slate-400 uppercase tracking-wide mb-3">{project.role} • {project.period}</p>
-                    <p className="text-slate-600 text-sm mb-6 line-clamp-4 leading-relaxed">
+                    <h3 className="text-xl font-bold text-slate-200 mb-1 group-hover:text-teal-400 transition-colors">{project.title}</h3>
+                    <p className="text-xs font-semibold text-slate-500 uppercase tracking-wide mb-3">{project.role} • {project.period}</p>
+                    <p className="text-slate-300 text-sm mb-6 line-clamp-4 leading-relaxed">
                       {project.desc}
                     </p>
 
                     <div className="flex flex-wrap gap-2 mt-auto">
                       {project.tags.map(tag => (
-                        <span key={tag} className="text-xs font-medium text-slate-500 bg-slate-100 px-2 py-1 rounded">
+                        <span key={tag} className="text-xs font-medium text-slate-400 bg-slate-800 px-2 py-1 rounded">
                           #{tag}
                         </span>
                       ))}
@@ -837,29 +845,29 @@ const MainApp = () => {
           {/* --- TEACHING ONLY (Full Width) --- */}
           <section id="teaching" className="py-20 px-6">
             <div className="max-w-7xl mx-auto">
-              <h3 className="text-2xl font-bold text-slate-900 mb-6 flex items-center gap-3">
-                <Award className="w-6 h-6 text-teal-600" />
+              <h3 className="text-2xl font-bold text-white mb-6 flex items-center gap-3">
+                <Award className="w-6 h-6 text-teal-400" />
                 Courses Taught
               </h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div className="p-6 bg-white/80 backdrop-blur-sm rounded-xl border-l-4 border-blue-500 shadow-sm border-t border-r border-b border-slate-200 h-full">
-                  <h4 className="text-xl font-semibold text-slate-800">Deep Learning</h4>
-                  <p className="text-sm text-blue-600 font-medium mt-1">Graduate Level • Teaching Assistant • Spring 2025, 2026</p>
-                  <p className="text-slate-600 mt-4 leading-relaxed">
+                <div className="p-6 bg-slate-800/80 backdrop-blur-sm rounded-xl border-l-4 border-blue-500 shadow-sm border-t border-r border-b border-slate-700 h-full">
+                  <h4 className="text-xl font-semibold text-slate-200">Deep Learning</h4>
+                  <p className="text-sm text-blue-400 font-medium mt-1">Graduate Level • Teaching Assistant • Spring 2025, 2026</p>
+                  <p className="text-slate-300 mt-4 leading-relaxed">
                     A comprehensive course covering modern architecture design, from basic Neural Networks to state-of-the-art architectures including Convolutional Neural Networks, Recurrent Neural Networks, and Transformers. Includes practical implementation using popular deep learning frameworks.
                   </p>
                 </div>
-                <div className="p-6 bg-white/80 backdrop-blur-sm rounded-xl border-l-4 border-teal-500 shadow-sm border-t border-r border-b border-slate-200 h-full">
-                  <h4 className="text-xl font-semibold text-slate-800">Artificial Intelligence and its Applications on the Internet of Things</h4>
-                  <p className="text-sm text-teal-600 font-medium mt-1">Postgraduate Level • Teaching Assistant • Spring 2025</p>
-                  <p className="text-slate-600 mt-4 leading-relaxed">
+                <div className="p-6 bg-slate-800/80 backdrop-blur-sm rounded-xl border-l-4 border-teal-500 shadow-sm border-t border-r border-b border-slate-700 h-full">
+                  <h4 className="text-xl font-semibold text-slate-200">Artificial Intelligence and its Applications on the Internet of Things</h4>
+                  <p className="text-sm text-teal-400 font-medium mt-1">Postgraduate Level • Teaching Assistant • Spring 2025</p>
+                  <p className="text-slate-300 mt-4 leading-relaxed">
                     This course explores how signals and data streams produced by IoT devices can be used to develop artificial intelligence applications, with a focus on training classification and regression models in IoT environments.
                   </p>
                 </div>
-                <div className="p-6 bg-white/80 backdrop-blur-sm rounded-xl border-l-4 border-purple-500 shadow-sm border-t border-r border-b border-slate-200 h-full">
-                  <h4 className="text-xl font-semibold text-slate-800">Data Management II - Intro to AI</h4>
-                  <p className="text-sm text-purple-600 font-medium mt-1">Postgraduate Level • Teaching Assistant • Spring 2023, 2024, 2025</p>
-                  <p className="text-slate-600 mt-4 leading-relaxed">
+                <div className="p-6 bg-slate-800/80 backdrop-blur-sm rounded-xl border-l-4 border-purple-500 shadow-sm border-t border-r border-b border-slate-700 h-full">
+                  <h4 className="text-xl font-semibold text-slate-200">Data Management II - Intro to AI</h4>
+                  <p className="text-sm text-purple-400 font-medium mt-1">Postgraduate Level • Teaching Assistant • Spring 2023, 2024, 2025</p>
+                  <p className="text-slate-300 mt-4 leading-relaxed">
                     Provides an introduction to basic concepts and definitions related to Machine Learning. Topics include data preparation, Ordinary and Multiple Linear Regression, Logistic Regression, Decision Trees and Ensemble methods, as well as Fully Connected Neural Networks and CNNs. Students are introduced to well-known ML libraries like Scikit-Learn, Keras, and Tensorflow.
                   </p>
                 </div>
@@ -872,8 +880,8 @@ const MainApp = () => {
       {/* --- CONTACT SECTION --- */}
       <section id="contact" className="py-16 px-6">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-2xl font-bold text-slate-900 mb-4">Let's Collaborate</h2>
-          <p className="text-slate-600 mb-6 max-w-xl mx-auto">
+          <h2 className="text-2xl font-bold text-white mb-4">Let's Collaborate</h2>
+          <p className="text-slate-300 mb-6 max-w-xl mx-auto">
             I am always open to discussing new research opportunities, consulting projects in the AI space, or educational workshops.
           </p>
 
@@ -881,7 +889,7 @@ const MainApp = () => {
             <a href="mailto:email@example.com" className="flex items-center gap-2 px-6 py-3 bg-teal-600 hover:bg-teal-700 text-white rounded-lg font-medium transition-all shadow-md shadow-teal-500/20">
               <Mail className="w-5 h-5" /> Send Email
             </a>
-            <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="flex items-center gap-2 px-6 py-3 bg-white hover:bg-slate-50 text-slate-700 rounded-lg font-medium transition-all border border-slate-300 shadow-sm">
+            <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="flex items-center gap-2 px-6 py-3 bg-slate-800 hover:bg-slate-700 text-slate-200 rounded-lg font-medium transition-all border border-slate-600 shadow-sm">
               <Linkedin className="w-5 h-5" /> LinkedIn
             </a>
           </div>
@@ -889,9 +897,9 @@ const MainApp = () => {
       </section>
 
       {/* --- FOOTER --- */}
-      <footer className="py-8 px-6 border-t border-slate-200 bg-slate-100">
+      <footer className="py-8 px-6 border-t border-slate-700 bg-slate-900">
         <div className="max-w-4xl mx-auto text-center">
-          <div className="flex justify-center gap-8 text-slate-400 mb-4">
+          <div className="flex justify-center gap-8 text-slate-500 mb-4">
             <a href="https://github.com/jenkinsci/jenkins" target="_blank" rel="noreferrer" className="hover:text-teal-600 transition-colors">
               <Github className="w-6 h-6" />
             </a>
@@ -903,7 +911,7 @@ const MainApp = () => {
             </a>
           </div>
 
-          <p className="text-sm text-slate-500">
+          <p className="text-sm text-slate-400">
             © {new Date().getFullYear()} Aristotelis Ballas. All rights reserved. <br />
             Built with React & Canvas.
           </p>
