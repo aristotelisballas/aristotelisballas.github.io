@@ -193,10 +193,10 @@ const NEWS_ITEMS = [
     date: "Mar 2025",
     title: "Paper Accepted at CVPR 2025",
     desc: "Our 'Gradient-Guided Annealing for Domain Generalization' paper has been accepted in CVPR 2025!",
-    image: "/public/news/cvpr/gga-concept.png",
+    image: "news/cvpr/gga-concept.png",
     content: `
       <p class="mb-4">We are thrilled to announce that our latest work, "Gradient-Guided Annealing for Domain Generalization," has been accepted for publication at the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) 2025.</p>
-      <p class="mb-4">In our research, we tackle the problem of Domain Generalization (hashtag#DG) from a gradient perspective, observing that conflicting gradients in datasets with diverse samples cause models to converge to suboptimal parameter configurations. The proposed Gradient-Guided Annealing (GGA) algorithm identifies loss surface minima that exhibit improved robustness by iteratively annealing its parameters, searching for points where gradients align across domains.</p>
+      <p class="mb-4">In our research, we tackle the problem of Domain Generalization (DG) from a gradient perspective, observing that conflicting gradients in datasets with diverse samples cause models to converge to suboptimal parameter configurations. The proposed Gradient-Guided Annealing (GGA) algorithm identifies loss surface minima that exhibit improved robustness by iteratively annealing its parameters, searching for points where gradients align across domains.</p>
       <p>We look forward to presenting this work in person and discussing the future of robust AI systems.</p>
       <p class="mb-2">If you want to learn more about our work, check out the following:</p>
       <p class="mb-1">📜 Paper: <a href="https://arxiv.org/abs/2502.20162" target="_blank" rel="noreferrer" class="text-teal-400 hover:underline">link</a></p>
@@ -208,7 +208,7 @@ const NEWS_ITEMS = [
     date: "Dec 2024",
     title: "New Paper Accepted at IEEE Access",
     desc: "Our research paper named “On the Out-Of-Distribution Robustness of Self-Supervised Representation Learning for Phonocardiogram Signals” got accepted in IEEE Access.",
-    image: "/public/news/pcg/abstract.png",
+    image: "news/pcg/abstract.png",
     content: `
       <p class=”mb-4”>🔊 Announcing our paper published in <strong>#IEEEAccess</strong>: “Which Augmentation Should I Use? An Empirical Investigation of Augmentations for Self-Supervised Phonocardiogram Representation Learning”.</p>
       <p class=”mb-4”>w/ Vasileios Papapanagiotou and Christos Diou</p>
@@ -224,7 +224,7 @@ const NEWS_ITEMS = [
     date: "Sep 2024",
     title: "Paper presentation at SETN 2024",
     desc: "Recently presented our short-paper “CycleMix: Mixing Source Domains for Domain Generalization in Style-Dependent Data” in SETN 2024.",
-    image: "/public/news/cyclemix/cyclemix.png",
+    image: "news/cyclemix/cyclemix.png",
     content: `
       <p class="mb-4">I had the pleasure of presenting our work "CycleMix" at the 13th Hellenic Conference on Artificial Intelligence (SETN 2024). CycleMix addresses the problem of style-dependent domain shifts by mixing source domains in a cyclic consistency framework.</p>
       <p>The conference provided an excellent platform to discuss the nuances of domain adaptation vs. generalization with fellow researchers in the Greek AI community.</p>
@@ -235,7 +235,7 @@ const NEWS_ITEMS = [
     date: "Mar 2024",
     title: "Paper Accepted at IEEE TAI",
     desc: "Our paper “Multi-Scale and Multi-Layer Contrastive Learning for Domain Generalization”, got accepted and is now published at the IEEE Transactions on Artificial Intelligence journal.",
-    image: "/public/news/tai/res50_model.png",
+    image: "news/tai/res50_model.png",
     content: `
       <p class="mb-4">In our recent paper with Christos Diou (published in the IEEE Transactions on Artificial Intelligence Journal), we introduce M2CL and attempt to tackle <strong>#DG</strong> in image classification.</p>
       <p class="mb-4">Domain Generalization is one of the most important problems in <strong>#ML</strong> today. In image classification particularly, a drawback of established CNN models is that representations extracted from deep layers of the network often contain features that can be attributed solely to the domain but are not relevant to the depicted class. In our work, we enable CNN models to learn domain invariant and disentangled representations by combining multi-layered and multi-scaled features of the network.</p>
@@ -249,7 +249,7 @@ const NEWS_ITEMS = [
     date: "Jun 2023",
     title: "Paper Accepted at IEEE TETCI",
     desc: "Our paper, “Towards Domain Generalization for ECG and EEG Classification: Algorithms and Benchmarks”, has been accepted at IEEE Transactions on Emerging Topics in Computational Intelligence.",
-    image: "/public/news/tetci/benchmark.png",
+    image: "news/tetci/benchmark.png",
     content: `
       <p class="mb-4">This work establishes rigorous benchmarks for Domain Generalization in the context of 1D biosignals (ECG and EEG), a field often overlooked compared to 2D computer vision. We provide a standardized evaluation protocol and open-source datasets to facilitate future research.</p>
     `
@@ -394,7 +394,7 @@ const NewsDetailView = ({ newsItem, onBack }) => {
         <img
           src={newsItem.image}
           alt={newsItem.title}
-          className="max-w-sm w-full h-auto rounded-xl border border-slate-700" 
+          className="max-w-sm w-full h-auto rounded-xl border border-slate-700"
         // max-w-lg to max-w-sm, max-w-md, max-w-xl adjust for smaller or larger
         />
       </div>
