@@ -1,6 +1,16 @@
 [
     {
         "title": "Gradient-Guided Annealing for Domain Generalization",
+        "venue": "",
+        "year": "2026",
+        "link": "",
+        "type": "Preprint",
+        "github": "https://github.com/aristotelisballas/GGA",
+        "arxiv": "https://arxiv.org/abs/2605.07914",
+        "selected": false
+    },
+    {
+        "title": "Gradient-Guided Annealing for Domain Generalization",
         "venue": "IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)",
         "year": "2025",
         "link": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11093999",
