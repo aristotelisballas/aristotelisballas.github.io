@@ -295,7 +295,7 @@ const WORK_EXPERIENCE = [
     role: "ML & DL Postdoctoral Researcher",
     org: "Harokopio University of Athens",
     period: "2026 - Present",
-    desc: "Researcher in projects focusing on representation learning for out-of-distribution generalization and integration of AI in healthcare."
+    desc: "Researcher in projects focusing on representation learning for out-of-distribution generalization and integration of AI in healthcare. WP2 leader in HORIZON Europe project AIRS,focusing on developing methods, tools and models for mechanism-constrained multimodal GenAI."
   },
   {
     role: "ML & DL Research Associate",
@@ -319,20 +319,12 @@ const WORK_EXPERIENCE = [
 
 const PROJECTS = [
   {
-    title: "REBECCA",
-    role: "Researcher",
-    period: "2021-2025",
-    desc: "Research on Breast Cancer induced chronic conditions supported by Causal Analysis of multi-source data. Developing AI models to predict quality of life trajectories.",
-    tags: ["Healthcare AI", "Structural Causal Models", "Breast Cancer"],
-    link: "https://rebeccaproject.eu/"
-  },
-  {
-    title: "RELEVIUM",
-    role: "Researcher",
-    period: "2022 - Present",
-    desc: "Advanced AI solutions for chronic pain management. Focusing on multimodal data fusion from wearable sensors and patient-reported outcomes.",
-    tags: ["Wearables", "Pain Mgmt", "AI Patient Monitoring", "AI-assisted Palliative Care"],
-    link: "https://www.releviumproject.eu/"
+    title: "AIRIS",
+    role: "Researcher & WP2 Leader",
+    period: "2026 - Present",
+    desc: "Mechanism-Informed Multimodal Generative AI for Causal and Dynamical Modelling in Biomedical Research.",
+    tags: ["GenAI for Biomedical Research"],
+    link: "https://airis-ai.eu/"
   },
   {
     title: "MELIORA",
@@ -357,7 +349,23 @@ const PROJECTS = [
     desc: "Managing and collecting digital biomarkers and health insights from Real-World Data",
     tags: ["Wearables", "Pain Mgmt", "AI Patient Monitoring"],
     link: "https://beam.hua.gr/"
-  }
+  },
+  {
+    title: "RELEVIUM",
+    role: "Researcher",
+    period: "2022 - Present",
+    desc: "Advanced AI solutions for chronic pain management. Focusing on multimodal data fusion from wearable sensors and patient-reported outcomes.",
+    tags: ["Wearables", "Pain Mgmt", "AI Patient Monitoring", "AI-assisted Palliative Care"],
+    link: "https://www.releviumproject.eu/"
+  },
+  {
+    title: "REBECCA",
+    role: "Researcher",
+    period: "2021-2025",
+    desc: "Research on Breast Cancer induced chronic conditions supported by Causal Analysis of multi-source data. Developing AI models to predict quality of life trajectories.",
+    tags: ["Healthcare AI", "Structural Causal Models", "Breast Cancer"],
+    link: "https://rebeccaproject.eu/"
+  },
 ];
 
 // SELECTED PUBLICATIONS (For Homepage)
